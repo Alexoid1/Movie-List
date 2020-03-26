@@ -1,25 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
+import {Provider} from 'react-redux'
+import {HashRouter as Router,Route} from 'react-router-dom' //hashrouter es lo mismo q el browser router sirve para asignar las rutas pero no causa problemas al subir el projecto a github
 import './App.css';
+import Navbar from './components/layouts/Navbar'
+import Footer from './components/layouts/Footer'
+import Landing from './components/home/landing'
+import Movie from './components/home/Movie'
+import store from './store'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+    <Provider store={store}>
+      <Router>
+        <div>
+          <Navbar/>
+          <Route exact path ="/" component={Landing}/>
+          <Route exact path ="/movie/:id" component={Movie}/>
+          <Footer/>
+        </div>       
+      </Router>
+      
+    </Provider>
+      
+    
+    
+    
+    
   );
 }
 
