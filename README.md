@@ -1,5 +1,5 @@
 This project was bootstrapped with [Create React App].
-## ==>https://alexoid1.github.io/Movie-List/#/
+## ==>https://alexoid1.github.io/Movie-List
 
 ## Available Scripts
 
