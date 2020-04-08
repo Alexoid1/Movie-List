@@ -1,6 +1,6 @@
 import React from 'react';
 import {Provider} from 'react-redux'
-import {HashRouter as Router,Route} from 'react-router-dom' //hashrouter es lo mismo q el browser router sirve para asignar las rutas pero no causa problemas al subir el projecto a github
+import {BrowserRouter as Router,Route} from 'react-router-dom' //hashrouter es lo mismo q el browser router sirve para asignar las rutas pero no causa problemas al subir el projecto a github
 import './App.css';
 import Navbar from './components/layouts/Navbar'
 import Footer from './components/layouts/Footer'
