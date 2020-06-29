@@ -6,6 +6,7 @@ export class MoviesContainer extends Component {
     render() {
         const {movies}=this.props;
         let content='';
+        console.log(movies)
         content= movies.Response =='True' ? movies.Search.map((movie, index)=><MovieCard key={index} movie={movie}/>):null;
         return (
             <div className='row text-center'>{content}</div>
