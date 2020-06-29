@@ -19,7 +19,6 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
-    "deploy":"npm run build&&gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
